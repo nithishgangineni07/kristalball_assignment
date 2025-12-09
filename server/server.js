@@ -40,6 +40,16 @@ app.get('/', (req, res) => {
   res.send('MAMS API Running');
 });
 
+const path = require("path");
+
+// Serve frontend build
+app.use(express.static(path.join(__dirname, "..", "client", "dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "client", "dist", "index.html"));
+});
+
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

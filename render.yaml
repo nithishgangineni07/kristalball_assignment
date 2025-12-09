@@ -1,0 +1,16 @@
+services:
+  - name: kristalball-fullstack
+    type: web
+    env: node
+    rootDir: .
+    buildCommand: |
+      cd client
+      npm install
+      npm run build
+      cd ..
+      cd server
+      npm install
+    startCommand: node index.js
+    envVars:
+      - key: PORT
+        value: 5000
