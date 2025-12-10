@@ -13,7 +13,7 @@ app.use(cors());
 app.use(morgan('dev'));
 
 // Database Connection
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/mams', {
+mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://admin:yourpassword@kristalbalassignment.pcnwuwo.mongodb.net/', {
 }).then(() => console.log('MongoDB Connected'))
   .catch(err => console.error('MongoDB Connection Error:', err));
 
