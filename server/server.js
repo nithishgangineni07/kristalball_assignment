@@ -42,12 +42,7 @@ app.get('/', (req, res) => {
 
 const path = require("path");
 
-// Serve frontend build
-app.use(express.static(path.join(__dirname, "..", "client", "dist")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "client", "dist", "index.html"));
-});
 
 
 app.listen(PORT, () => {

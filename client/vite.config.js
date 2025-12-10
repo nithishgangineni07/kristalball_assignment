@@ -7,3 +7,5 @@ export default defineConfig({
     outDir: "dist",       // <-- REQUIRED for Render fullstack deploy
   },
 });
+
+

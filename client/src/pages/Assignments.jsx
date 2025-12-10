@@ -136,7 +136,7 @@ const Assignments = () => {
                 </div>
             )}
 
-            <div className="card !p-0 overflow-hidden">
+            <div className="card p-0 overflow-hidden">
                 <div className="p-6 border-b border-slate-100 bg-slate-50/50">
                     <h4 className="font-bold text-slate-700">Active Assignments List</h4>
                 </div>
